@@ -7,7 +7,7 @@ __주의: 먼저 우측 상단의 Fork 버튼을 클릭하여 이 리파지토리를 자신 또는 팀의 Git
 
 File >> Import... >> Git - Projects from Git >> Clone URI >>  
 fork된 URI 입력(예: https://github.com/your_Github_username/UserMan2.git), username & password 입력 >>   
-Local Directory 경로 입력(예: C:\Users\사용자\git\DBP) >>  
+Local Directory 경로 입력(예: C:\Users\사용자\git\UserMan2) >>  
 Importing existing Eclipse projects (첫번째 옵션) 선택 >> Finish  
 
 ### Git 사용법 참조
