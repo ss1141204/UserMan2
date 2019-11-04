@@ -1,7 +1,7 @@
 # UserMan2
 Sample MVC project for DBP class in 2019-2 
 
-__주의: 먼저 우측 상단의 Fork 버튼을 클릭하여 이 리파지토리를 자신 또는 팀의 Github 사용자 계정으로 Fork(복사)한 후 사용하기 바랍니다.__
+__주의: 먼저 우측 상단의 Fork 버튼을 클릭하여 이 리파지토리를 본인의 Github 사용자 계정으로 Fork(복사)한 후 사용하기 바랍니다.__
 
 ### Eclipse에 import하는 방법 (local repository 생성)
 
