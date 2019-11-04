@@ -16,11 +16,11 @@ fork된  URI 입력(예: https://github.com/your_Github_username/UserMan2.git), user
 2. with_Community (UserMan3)
 3. with_Community_using Ajax (UserMan3a)
 
-처음 import되는 branch는 master이며, 다른 branch들을 import하기 위해서는 
+처음 import되는 branch는 master이며, 다른 branch를 import하기 위해서는 
 프로젝트 이름(UserMan2)을 마우스 우클릭 후 Team >> Switch To >> Other >> 
-Remote Tracking 아래의 branch들 중 하나를 선택 >> Checkout.. >> Checkout as New Local Branch 실행
+Remote Tracking 아래의 branch 중 하나를 선택 >> Checkout.. >> Checkout as New Local Branch 실행
 
-branch들이 local repository에 생성된 후에는 Team >> Switch To >> local branch를 직접 선택하여 전환(checkout) 가능 
+branch들이 local repository에 생성된 후에는 Team >> Switch To >> local branch 이름을 직접 선택하여 전환(checkout) 가능 
  
 ### Git 사용법 참조
 
