@@ -1,9 +1,7 @@
 # UserMan2 with Community using Ajax (UserMan3a) 
-a branch from UserMan2 master 
-adding community functionalities and using Ajax calls to JSON controllers
-
-- /community/list
-- /user/register/form 
+a branch from UserMan2 master  
+- adding community functionalities  
+- using Ajax calls to the controllers returning JSON text 
 
 ### with_Community_(UserMan3) branch 에서 변경된 클래스  
 
