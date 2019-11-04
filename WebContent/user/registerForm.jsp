@@ -47,9 +47,36 @@ function userList(targetUri) {
 	form.submit();
 }
 
+var request = new XMLHttpRequest();
+
+function getCommunityList() {
+	// Ajax를 이용하여 커뮤니티 목록 정보를 요청
+	request.open("GET", "${pageContext.request.contextPath}/community/list/json?t=" + new Date().getTime(), true);
+	request.onreadystatechange = showCommunityList;
+	request.send(null);
+}
+
+function showCommunityList() {
+	// 전송된 커뮤니티 목록 정보를 이용하여 Select 메뉴 생성
+	if (request.readyState == 4 && request.status == 200) {
+		/* Get the response from the server */
+		var commList = JSON.parse(request.responseText);
+		var select = document.getElementById("commSelect");
+		var i;
+		for (i = 0; i < commList.length; i++) {				
+			var option = document.createElement("option");
+			option.setAttribute("value", commList[i].id)
+			var name = document.createTextNode(commList[i].name);
+			option.appendChild(name);
+			select.appendChild(option);			    	
+		}				 
+	}
+}
+
 </script>
 </head>
-<body bgcolor=#FFFFFF text=#000000 leftmargin=0 topmargin=0 marginwidth=0 marginheight=0>	
+<body bgcolor=#FFFFFF text=#000000 leftmargin=0 topmargin=0 marginwidth=0 marginheight=0
+	onload="getCommunityList()">	
 <!-- 화면 로드 시 서버로부터 커뮤니티 목록을 가져와 commSelect 메뉴 생성 -->
 <br>
 <!-- registration form  -->
