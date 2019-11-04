@@ -1,7 +1,8 @@
 # UserMan2 with Community (UserMan3) 
 a branch from UserMan2 master 
+- adding community functionalities  
 
-### master에서 변경된 패키지 & 클래스  
+### master로부터 변경된 패키지 & 클래스  
 
 - controller.RequestMapping (request mapping 정보 수정 및 추가)
 - controller.comm.* (추가: 커뮤니티 기능 관련 컨트롤러들)
