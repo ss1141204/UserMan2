@@ -1,9 +1,8 @@
 # UserMan2 with Community using Ajax (UserMan3a) 
-a branch from UserMan2 master  
-- adding community functionalities  
-- using Ajax calls to the controllers returning JSON text 
+a branch generated from with_Community_(UserMan3)   
+- adding Ajax calls to the controllers returning JSON text 
 
-### with_Community_(UserMan3) branch 에서 변경된 클래스  
+### with_Community_(UserMan3) branch로부터 변경된 클래스  
 
 - controller.RequestMapping (request mapping 정보 수정 및 추가)
 - controller.comm.ListCommunityController (ListAndViewCommunityController로 교체: listAndView.jsp 뷰 선택)
