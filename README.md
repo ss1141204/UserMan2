@@ -1,21 +1,23 @@
 # UserMan2
 Sample MVC project for DBP class in 2019-2 
 
-__ì£¼ì˜: ë¨¼ì € ìš°ì¸¡ ìƒë‹¨ì˜ Fork ë²„íŠ¼ì„ í´ë¦­í•˜ì—¬ ì´ ë¦¬íŒŒì§€í† ë¦¬ë¥¼ ìì‹  ë˜ëŠ” íŒ€ì˜ Github ì‚¬ìš©ì ê³„ì •ìœ¼ë¡œ Fork(ë³µì‚¬)í•œ í›„ ì‚¬ìš©í•˜ê¸° ë°”ëë‹ˆë‹¤.__
+__ÁÖÀÇ: ¸ÕÀú ¿ìÃø »ó´ÜÀÇ Fork ¹öÆ°À» Å¬¸¯ÇÏ¿© ÀÌ ¸®ÆÄÁöÅä¸®¸¦ ÀÚ½Å ¶Ç´Â ÆÀÀÇ Github »ç¿ëÀÚ °èÁ¤À¸·Î Fork(º¹»ç)ÇÑ ÈÄ »ç¿ëÇÏ±â ¹Ù¶ø´Ï´Ù.__
 
-### Eclipseì— importí•˜ëŠ” ë°©ë²• (local repository ìƒì„±)
+### Eclipse¿¡ importÇÏ´Â ¹æ¹ı (local repository »ı¼º)
 
 File >> Import... >> Git - Projects from Git >> Clone URI >>  
-forkëœ URI ì…ë ¥(ì˜ˆ: https://github.com/your_Github_username/UserMan2.git), username & password ì…ë ¥ >>   
-Local Directory ê²½ë¡œ ì…ë ¥(ì˜ˆ: C:\Users\ì‚¬ìš©ì\git\UserMan2) >>  
-Importing existing Eclipse projects (ì²«ë²ˆì§¸ ì˜µì…˜) ì„ íƒ >> Finish  
+forkµÈ URI ÀÔ·Â(¿¹: https://github.com/your_Github_username/UserMan2.git), username & password ÀÔ·Â >>   
+Local Directory °æ·Î ÀÔ·Â(¿¹: C:\Users\»ç¿ëÀÚ\git\DBP) >>  
+Importing existing Eclipse projects (Ã¹¹øÂ° ¿É¼Ç) ¼±ÅÃ >> Finish  
 
-### Git ì‚¬ìš©ë²• ì°¸ì¡°
+### Git »ç¿ë¹ı ÂüÁ¶
 
-ìœ¤ì›…ì‹, ë§Œë“¤ë©´ì„œ ë°°ìš°ëŠ” Git+GitHub ì…ë¬¸, í•œë¹›ë¯¸ë””ì–´, 2015.  
-ì˜¤ì˜¤ì¸ ì¹´ íˆë¡œí‚¤, ì†Œì…œ ì½”ë”©ìœ¼ë¡œ ì´ë„ëŠ” GitHub ì‹¤ì²œ ê¸°ìˆ , ì œì´í, 2015.  
+À±¿õ½Ä, ¸¸µé¸é¼­ ¹è¿ì´Â Git+GitHub ÀÔ¹®, ÇÑºû¹Ìµğ¾î, 2015.  
+¿À¿ÀÃ÷Ä« È÷·ÎÅ°, ¼Ò¼È ÄÚµùÀ¸·Î ÀÌ²ô´Â GitHub ½ÇÃµ ±â¼ú, Á¦ÀÌÆà, 2015.  
 https://backlog.com/git-tutorial/kr/  
-https://nolboo.kim/blog/2013/10/06/github-for-beginner/ ë° ë§í¬ëœ ë¬¸ì„œë“¤  
+https://nolboo.kim/blog/2013/10/06/github-for-beginner/ ¹× ¸µÅ©µÈ ¹®¼­µé  
 http://itmir.tistory.com/461  
 http://jwgye.tistory.com/38?category=689862  
-ê·¸ë°–ì˜ ì˜¨ë¼ì¸ ìë£Œë“¤  
+±×¹ÛÀÇ ¿Â¶óÀÎ ÀÚ·áµé  
+
+
