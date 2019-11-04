@@ -46,9 +46,11 @@ function userList(targetUri) {
 	form.action = targetUri;
 	form.submit();
 }
+
 </script>
 </head>
-<body bgcolor=#FFFFFF text=#000000 leftmargin=0 topmargin=0 marginwidth=0 marginheight=0>
+<body bgcolor=#FFFFFF text=#000000 leftmargin=0 topmargin=0 marginwidth=0 marginheight=0>	
+<!-- 화면 로드 시 서버로부터 커뮤니티 목록을 가져와 commSelect 메뉴 생성 -->
 <br>
 <!-- registration form  -->
 <form name="form" method="POST" action="<c:url value='/user/register' />">
@@ -60,8 +62,7 @@ function userList(targetUri) {
 		  <tr>
 		    <td bgcolor="f4f4f4" height="22">&nbsp;&nbsp;<b>사용자 관리 - 회원 가입</b>&nbsp;&nbsp;</td>
 		  </tr>
-	    </table>  
-	    <br>	 
+	    </table>  	 
 	    <!-- 회원가입이 실패한 경우 exception 객체에 저장된 오류 메시지를 출력 -->
         <c:if test="${registerFailed}">
 	      <font color="red"><c:out value="${exception.getMessage()}" /></font>
@@ -106,9 +107,19 @@ function userList(targetUri) {
 				<input type="text" style="width: 240" name="phone" 
 					<c:if test="${registerFailed}">value="${user.phone}"</c:if>>
 			</td>
+		  </tr>
+		  <tr height="40">
+			<td width="150" align="center" bgcolor="E6ECDE">커뮤니티</td>
+			<td width="250" bgcolor="ffffff" style="padding-left: 10">
+<%-- 			<input type="text" style="width: 240" name="commId" 
+					<c:if test="${registerFailed}">value="${user.commId}"</c:if>> --%>
+				<select id="commSelect" name="commId" style="width: 240"> 
+					<option value="0">없음</option>
+				</select>
+			</td>
 		  </tr>		  
 	    </table>
-	    <br>	  
+	    <br>
 	    <table style="width: 100%">
 		  <tr>
 			<td align="left">

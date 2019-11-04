@@ -1,5 +1,5 @@
 <%@page contentType="text/html; charset=utf-8" %>
-<%@page import="model.User" %>
+<%@page import="model.*" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%
 	User user = (User)request.getAttribute("user");
@@ -58,7 +58,7 @@ function userList(targetUri) {
 	  <td>
 	    <table>
 		  <tr>
-			<td bgcolor="f4f4f4" height="22">&nbsp;&nbsp;<b>사용자 관리 - 사용자 수정</b>&nbsp;&nbsp;</td>
+			<td bgcolor="f4f4f4" height="22">&nbsp;&nbsp;<b>사용자 관리 - 수정</b>&nbsp;&nbsp;</td>
 		  </tr>
 	    </table>  
 	    <br>	  
@@ -98,7 +98,22 @@ function userList(targetUri) {
 			<td width="250" bgcolor="ffffff" style="padding-left: 10">
 		 		<input type="text" style="width: 240" name="phone" value="${user.phone}">
 			</td>
-		  </tr>		  
+		  </tr>		
+		  <tr height="40">
+			<td width="150" align="center" bgcolor="E6ECDE">커뮤니티</td>
+			<td width="250" bgcolor="ffffff" style="padding-left: 10">
+ 		<%-- 	<input type="text" style="width: 240" name="commId" 
+ 					value="<c:if test="${user.commId!=0}">${user.commId}</c:if>"> --%>	 
+			 	<select name="commId" style="width: 240">
+					<option value="0">없음</option>
+					<c:forEach var="comm" items="${commList}">
+						<option value="${comm.id}"
+							<c:if test="${comm.id eq user.commId}">selected="selected"</c:if>
+							>${comm.name}</option>
+					</c:forEach>
+				</select>
+			</td>
+		  </tr>	  
 	    </table>
 	    <br>	  
 	    <table style="width: 100%">

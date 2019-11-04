@@ -4,7 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 import controller.user.*;
+import controller.comm.*;
 
 public class RequestMapping {
     private static final Logger logger = LoggerFactory.getLogger(DispatcherServlet.class);
@@ -22,9 +24,20 @@ public class RequestMapping {
         mappings.put("/user/view", new ViewUserController());
         mappings.put("/user/register/form", new ForwardController("/user/registerForm.jsp"));
         mappings.put("/user/register", new RegisterUserController());
-        mappings.put("/user/update/form", new UpdateUserFormController());
+
+        // 사용자 정보 수정 폼 요청과 수정 요청 처리 병합
+//      mappings.put("/user/update/form", new UpdateUserFormController());
+        mappings.put("/user/update/form", new UpdateUserController());
         mappings.put("/user/update", new UpdateUserController());
         mappings.put("/user/delete", new DeleteUserController());
+        
+        // 커뮤니티 관련 request URI 추가
+        mappings.put("/community/list", new ListCommunityController());
+        mappings.put("/community/view", new ViewCommunityController());
+        mappings.put("/community/create/form", new ForwardController("/community/creationForm.jsp"));
+        mappings.put("/community/create", new CreateCommunityController());
+        mappings.put("/community/update/form", new UpdateCommunityController());
+        mappings.put("/community/update", new UpdateCommunityController());
         
         logger.info("Initialized Request Mapping!");
     }

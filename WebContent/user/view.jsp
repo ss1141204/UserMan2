@@ -1,5 +1,5 @@
 <%@page contentType="text/html; charset=utf-8" %>
-<%@page import="model.User" %>
+<%@page import="model.*" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%
 	User user = (User)request.getAttribute("user");
@@ -23,7 +23,7 @@ function userRemove() {
 	  <td>
 	    <table>
 		  <tr>
-			<td bgcolor="f4f4f4" height="22">&nbsp;&nbsp;<b>사용자 관리 - 사용자 정보 보기</b>&nbsp;&nbsp;</td>
+			<td bgcolor="f4f4f4" height="22">&nbsp;&nbsp;<b>사용자 관리 - 상세정보 보기</b>&nbsp;&nbsp;</td>
 		  </tr>
 	    </table>  
 	    <br>	  	    
@@ -49,7 +49,17 @@ function userRemove() {
 		  <tr>
 			<td width="120" align="center" bgcolor="E6ECDE" height="22">전화번호</td>
 			<td width="470" bgcolor="ffffff" style="padding-left: 10">
-				${user.phone}<%-- <%=user.getPhone()%> --%>
+				${user.phone} <%-- <%=user.getPhone()%> --%>
+			</td>
+		  </tr>		  
+		  <tr>
+			<td width="120" align="center" bgcolor="E6ECDE" height="22">커뮤니티</td>
+			<td width="470" bgcolor="ffffff" style="padding-left: 10">
+				<a href="<c:url value='/community/view'>
+					   <c:param name='commId' value='<%=Integer.toString(user.getCommId())%>'/>
+			 		 </c:url>">
+					${user.commName} <%-- <%=user.commName()%> --%>
+				</a>
 			</td>
 		  </tr>	
 	 	</table>
