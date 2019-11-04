@@ -12,15 +12,20 @@ fork된  URI 입력(예: https://github.com/your_Github_username/UserMan2.git), user
 "Importing existing Eclipse projects" (첫번째 옵션) 선택 >> Finish  
 
 ### Branches 
+다음과 같은  세 가지 branch가 존재함 
+ 
 1. master (UserMan2)
 2. with_Community (UserMan3)
 3. with_Community_using Ajax (UserMan3a)
-
-처음 import되는 branch는 master이며, 다른 branch를 import하기 위해서는 
-프로젝트 이름(UserMan2)을 마우스 우클릭 후 Team >> Switch To >> Other >> 
-Remote Tracking 아래의 branch 중 하나를 선택 >> Checkout.. >> Checkout as New Local Branch 실행
-
-branch들이 local repository에 생성된 후에는 Team >> Switch To >> local branch 이름을 직접 선택하여 전환(checkout) 가능 
+ 
+처음 local repository에 import되는 branch는 master이며, 다른 branch들을 import하기 위해서는 Eclipse의 Git perspective를 이용 
+(Window >> Perspective >> Open Perspective >> Other... >> Git)
+ 
+Git Repositories 창에서 
+UserMan2 - Branches - Remote Tracking 아래의 branch 중 하나를 선택하여 더블클릭 >> Checkout as New Local Branch 실행
+ 
+branch들이 local에 저장된 후에는 Local 아래의 branch 이름을 더블클릭하여 전환(checkout)하거나, 
+또는 Java EE perspective에서 Project Explorer 창에서 프로젝트 이름을 마우스 우클릭한 후  Team >> Switch To >> branch 이름을 선택하여 이동 가능  
  
 ### Git 사용법 참조
 
